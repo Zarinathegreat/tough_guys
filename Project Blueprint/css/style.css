@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* RESET CSS BEGIN */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*RESET CSS END*/
+
+
+/* HELPER CLASSES BEGIN */
+
+.alignLeft {
+	float: left;
+}
+
+.alignRight {
+	float: right;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+
+strong,
+b {
+	font-weight: 700;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+	font-size: 17px;
+	line-height: 24px;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+
+/*HELPER CLASSES END*/
+
+
+/* GENERAL RULES*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.wrapper {
+	max-width: 880px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 3px 55px;
+	position: relative;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	background: #282828;
+}
+
+p {
+	font-size: 18px;
+	line-height: 23px;
+	margin-bottom: 20px;
+}
+
+.div-red-rectangle {
+	background-image: url(../img/red-rectangle.png);
+	color: #fff;
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	padding: 20px 40px;
+	font-size: 22px;
+	line-height: 27px;
+	font-weight: 600;
+	position: relative;
+	margin-left: -70px;
+	margin-right: -70px;
+}
+
+.div-red-rectangle:before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 15px solid #7d0000;
+	border-left: 16px solid transparent;
+	bottom: -14px;
+	left: -1px;
+	right: 0;
+}
+
+.div-red-rectangle:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 15px solid #7d0000;
+	border-right: 16px solid transparent;
+	bottom: -14px;
+	right: -1px;
+}
+
+.nth-paras {
+	padding-top: 30px;
+	padding-bottom: 3px;
+	margin-bottom: 30px;
+}
+
+.nth-paras p {
+	margin-right: 340px;
+}
+
+.person {
+	float: right;
+	margin-top: -60px;
+	position: relative;
+}
+
+.greyish {
+	background: #faf9f7;
+	padding-left: 55px;
+	margin-left: -55px;
+	margin-right: -55px;
+}
+
+.greyish:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.yellow-arrow {
+	display: inline;
+	position: relative;
+}
+
+.yellow-arrow:after {
+	content: "";
+	background: url('../img/arrow.png') no-repeat 0 0;
+	display: block;
+	width: 68px;
+	height: 42px;
+	position: absolute;
+	top: 20px;
+	left: 230px;
+}
+
+.person-2 {
+	float: left;
+	margin-left: -80px;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+h4.callout {
+	background: #ca0000;
+	padding: 15px 0px;
+	display: block;
+	margin: 50px 270px 20px 180px;
+	color: #fff;
+	font-weight: 600;
+	position: relative;
+	font-size: 20px;
+}
+
+h4.callout:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 50px solid #ca0000;
+	border-right: 27px solid transparent;
+	top: 0;
+	right: -27px;
+}
+
+.description {
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+.silverHeading {
+	font-size: 28px;
+	line-height: 33px;
+	font-weight: 500;
+	background: #f2f2f4;
+	padding: 20px 85px;
+	margin-left: -55px;
+	margin-right: -55px;
+}
