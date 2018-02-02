@@ -275,6 +275,21 @@ p {
 	float: right;
 	margin-top: -60px;
 	position: relative;
+	animation: moveInRight 1.5s ease-out;
+}
+
+/*PERSON ANIMATION*/
+
+@keyframes moveInRight {
+0% {
+opacity: 0;
+transform: translateX(70%);
+}
+
+100% {
+opacity: 1;
+transform: translateX(0);
+}
 }
 
 .greyish {
